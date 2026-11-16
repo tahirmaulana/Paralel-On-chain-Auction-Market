@@ -193,20 +193,6 @@ The prototype includes public and role-based application areas for:
 
 Availability may vary while the testnet prototype is under active development.
 
-## Technology Overview
-
-PARALEL is implemented as a separated monorepo architecture:
-
-- a statically exported Next.js frontend;
-- Cloudflare Workers for application APIs and operational services;
-- Solidity smart contracts deployed to Arbitrum Sepolia;
-- USDC-compatible testnet settlement flows;
-- PostgreSQL-compatible application data storage;
-- an event indexer that projects contract activity for the application;
-- wallet-based authentication and signed actions.
-
-This public overview intentionally excludes internal infrastructure identifiers, credentials, private operational procedures, environment configuration, and security-sensitive implementation details.
-
 ## Security Model
 
 PARALEL follows several prototype security boundaries:
@@ -241,40 +227,6 @@ These are material product and governance decisions, not minor interface feature
 PARALEL currently operates as a prototype on Arbitrum Sepolia. Testnet assets have no intended monetary value. Features, addresses, interfaces, rules, and data may be reset or changed during development.
 
 Do not use the prototype for real asset transfers, real-money auctions, legal title transfer, tax reporting, custody commitments, or investment decisions.
-
-## Repository Safety
-
-Public contributions and documentation must not include:
-
-- private keys or seed phrases;
-- production credentials or access tokens;
-- database connection strings;
-- private RPC credentials;
-- internal account identifiers;
-- private user or partner data;
-- confidential legal, tax, custody, or operational records;
-- unpublished vulnerability details.
-
-If sensitive information is discovered, do not open a public issue containing the information. Use the repository owner's private contact or GitHub's private vulnerability reporting feature when available.
-
-## Contributing
-
-PARALEL is under active prototype development. Before opening a pull request:
-
-1. keep frontend, application Worker, indexer, keeper, and smart-contract boundaries separate;
-2. do not introduce new financial authority or custody behavior implicitly;
-3. preserve immutable auction snapshots;
-4. include tests for changed contract or application behavior;
-5. avoid committing generated secrets, local environment files, or private data;
-6. explain any change to auction economics, lifecycle, roles, or authorization explicitly.
-
-Detailed contributor workflows may be published separately as the repository matures.
-
-## Documentation
-
-This file is the public product and architecture overview for PARALEL.
-
-Public technical documentation should explain verifiable behavior without exposing confidential configuration or internal operational material. Internal planning documents, credentials, private deployment records, and mixed internal viewpoints are not part of this public specification.
 
 ## License
 
