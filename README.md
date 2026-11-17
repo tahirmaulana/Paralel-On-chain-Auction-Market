@@ -6,22 +6,22 @@ PARALEL is an On-chain Auction Marketplace for Real-World Assets (RWAs), powered
 Physical asset custody and verification are handled **off-chain**, while bidding, bidder stakes, rankings, and fund settlement are executed and recorded **on-chain**. Bidder funds remain non-custodial, with smart contracts serving as the authoritative source of truth throughout the auction lifecycle.
 
 ## Stack
-· Arbitrum (Testnet)
+· Arbitrum Testnet
 
-· Solidity + Foundry (Smart Contract)
+· Solidity + Foundry
 
-· Next.js (TypeScript)
+· Next.js + Wagmi + Viem
 
-· Wagmi + Viem (Wallet Connector)
+· Neon PostgreSQL + Drizzle
 
-· Neon PostgreSQL + Drizzle (Database)
+· Cloudflare
 
-· Cloudflare (Backend)
+· dAppling + PinMe
 
-· dAppling Network + PinMe (Frontend)
+· Dynamic + Zerodev (on development)
 
 ## Try me!
-URL 1: https://paralel-auction.dappling.network
+URL 1: https://paralel-auction.dappling.network (MAIN)
 
 URL 2: https://paralel.pinit.eth.limo
 
